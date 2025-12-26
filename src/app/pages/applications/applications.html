@@ -1,0 +1,16 @@
+<!-- applications.html -->
+<h1>My App Store</h1>
+
+<h2>Basic Apps</h2>
+<app-logo-swiper
+  [items]="section"
+  [productPath]="productPath"
+  (select)="openDetails($event)"
+/>
+
+<h2>Complex Apps</h2>
+<app-logo-swiper
+  [items]="sectionReversed"
+  [productPath]="productPath"
+  (select)="openDetails($event)"
+/>

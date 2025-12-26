@@ -1,0 +1,42 @@
+<!-- lightbox-dialog.html -->
+<div
+  class="lightbox-container no__highlight"
+  [class.lightbox-container--visible]="backgroundVisible"
+>
+  <div
+    class="close-button-area"
+    (click)="closeFromEvent($event)"
+    (touchend)="closeFromEvent($event)"
+    [class.overlay-btns-hidden]="hideOverlayButtons"
+  >
+    <button mat-icon-button class="close-button overlay-btns">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <div class="anim-layer" #animLayer></div>
+  <div class="swiper full-screen-swiper" #lightboxSwiper>
+    <div class="swiper-wrapper">
+      @for (image of data.images; track image; let i = $index) {
+      <div class="swiper-slide">
+        <div class="swiper-zoom-container">
+          <img
+            class="lb-img"
+            [class.lb-img--hidden]="hideInitialImage && i === currentIndex"
+            [src]="data.imgBaseUrl(image)"
+            [alt]="image"
+            (load)="onInitialImageLoad(i, $event)"
+          />
+        </div>
+      </div>
+      }
+    </div>
+    <div
+      class="swiper-button-prev overlay-btns"
+      [class.overlay-btns-hidden]="hideOverlayButtons"
+    ></div>
+    <div
+      class="swiper-button-next overlay-btns"
+      [class.overlay-btns-hidden]="hideOverlayButtons"
+    ></div>
+  </div>
+</div>

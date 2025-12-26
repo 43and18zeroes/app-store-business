@@ -1,0 +1,25 @@
+<!-- logo-swiper.html -->
+<div class="swiper" #swiperContainer>
+  <div class="swiper-wrapper">
+    @for (thumbnailData of items; track thumbnailData.productId + '_' + $index)
+    {
+    <a
+      class="swiper-slide no__highlight"
+      [attr.aria-label]="thumbnailData.productLogoAltText || 'Open product'"
+      (click)="$event.stopPropagation(); select.emit(thumbnailData)"
+    >
+      <img
+        class="logo__shadow"
+        [src]="
+          'img/' + productPath + '/logos/' + thumbnailData.productLogoFilename
+        "
+        [alt]="thumbnailData.productLogoAltText || 'Logo'"
+        loading="eager"
+        decoding="async"
+      />
+    </a>
+    }
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
