@@ -1,7 +1,7 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {
-  SECTION,
+  SECTION_BASIC_APPS,
   SectionItem,
 } from '../../pages/applications/applications.data';
 import { CommonModule } from '@angular/common';
@@ -34,6 +34,6 @@ export class ProductDetails {
   readonly item = computed<SectionItem | undefined>(() => {
     if (this.navState && this.navState.productId === this.productId())
       return this.navState;
-    return SECTION.find((s) => s.productId === this.productId());
+    return SECTION_BASIC_APPS.find((s) => s.productId === this.productId());
   });
 }

@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import {
   PRODUCT_PATH,
-  DOUBLED_SECTION,
-  SECTION_REVERSED,
+  SECTION_BASIC_APPS,
+  SECTION_COMPLEX_APPS,
   SectionItem,
 } from './applications.data';
 import { Router } from '@angular/router';
@@ -20,8 +20,8 @@ export class Applications {
   private router = inject(Router);
 
   readonly productPath = PRODUCT_PATH;
-  readonly section: SectionItem[] = DOUBLED_SECTION;
-  readonly sectionReversed: SectionItem[] = SECTION_REVERSED;
+  readonly sectionBasicApps: SectionItem[] = SECTION_BASIC_APPS;
+  readonly sectionComplexApps: SectionItem[] = SECTION_COMPLEX_APPS;
 
   openDetails(item: SectionItem) {
     this.router.navigate(['/', PRODUCT_PATH, item.productId], { state: item });
