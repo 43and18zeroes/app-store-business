@@ -12,15 +12,15 @@ export const PRODUCT_PATH = 'applications';
 
 export const SECTION: SectionItem[] = [
   {
-    productId: 'chat',
-    productName: 'Chat App',
+    productId: 'card-grid',
+    productName: 'Card Grit App',
     productDescription:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+      'Our innovative Card Grid application offers a streamlined interface designed for the effortless management and visualization of business resources. By presenting data in a clean, structured layout, users can quickly gain a high-level overview of essential assets at a single glance.',
     productDescription2:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    productLogoFilename: 'logo-rnd-chat.webp',
-    productLogoAltText: 'Chat App',
-    productPreviewsPath: 'app-name',
+      'The app features integrated search and advanced filtering capabilities to ensure that the right information is always just a few clicks away. These powerful navigation tools eliminate data clutter, significantly boosting productivity and decision-making speed across your organization.',
+    productLogoFilename: 'logo-card-grid-00.webp',
+    productLogoAltText: 'Card Grit App',
+    productPreviewsPath: 'card-grid',
   },
   {
     productId: 'maps',
