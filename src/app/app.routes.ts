@@ -5,7 +5,7 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    title: 'My App Store',
+    title: 'App Store Business',
     loadComponent: () =>
       import('./pages/applications/applications').then((m) => m.Applications),
   },
@@ -16,12 +16,12 @@ export const routes: Routes = [
   },
   {
     path: 'info',
-    title: 'Info - My App Store',
+    title: 'Info - App Store Business',
     loadComponent: () => import('./pages/info/info').then((m) => m.Info),
   },
   {
     path: 'privacy-policy',
-    title: 'Privacy Policy - My App Store',
+    title: 'Privacy Policy - App Store Business',
     loadComponent: () =>
       import('./pages/privacy-policy/privacy-policy').then(
         (m) => m.PrivacyPolicy
@@ -29,13 +29,13 @@ export const routes: Routes = [
   },
   {
     path: 'imprint',
-    title: 'Imprint - My App Store',
+    title: 'Imprint - App Store Business',
     loadComponent: () =>
       import('./pages/imprint/imprint').then((m) => m.Imprint),
   },
   {
     path: `${PRODUCT_PATH}/:productId`,
-    title: 'Product Details - My App Store',
+    title: 'Product Details - App Store Business',
     loadComponent: () =>
       import('./components/product-details/product-details').then(
         (m) => m.ProductDetails
@@ -43,7 +43,7 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    title: '404 - Page not found - My App Store',
+    title: '404 - Page not found - App Store Business',
     loadComponent: () =>
       import('./pages/not-found/not-found').then((m) => m.NotFound),
   },
