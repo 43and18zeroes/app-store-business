@@ -28,10 +28,24 @@ header {
 }
 
 .product__btns {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  button {
+    border-radius: 8px;
+    border: none;
+    padding: 12px 32px;
+     font-weight: 700;
+  }
+
   .live__btn {
     background-color: $base-color;
-    color: white;
-    border: none;
+    font-size: 16px;
+  }
+
+  .details__btn {
+    font-size: 14px;
   }
 }
 
@@ -62,14 +76,6 @@ header {
         display: none;
       }
     }
-
-    .product__btns {
-      .live__btn {
-        background-color: $base-color;
-        color: white;
-        border: none;
-      }
-    }
   }
 
   .descriptionMobile {
@@ -82,5 +88,9 @@ header {
     img {
       margin-right: 16px;
     }
+  }
+
+  .product__btns {
+    flex-direction: column;
   }
 }
