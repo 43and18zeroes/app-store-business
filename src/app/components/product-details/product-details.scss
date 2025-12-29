@@ -1,3 +1,5 @@
+$base-color: light-dark(#01875f, #4de1b2);
+
 header {
   width: 100%;
   display: flex;
@@ -8,7 +10,7 @@ header {
 
   .app__info {
     span {
-      color: light-dark(#01875f, #4de1b2);
+      color: $base-color;
       font-weight: 500;
     }
   }
@@ -23,6 +25,14 @@ header {
 
 .descriptionMobile {
   display: none;
+}
+
+.product__btns {
+  .live__btn {
+    background-color: $base-color;
+    color: white;
+    border: none;
+  }
 }
 
 @media (width < 1280px) {
@@ -42,15 +52,23 @@ header {
     gap: 0;
     margin-bottom: 16px;
 
+    img {
+      width: 72px;
+      margin: 7px 24px 0 0;
+    }
+
     .app__info {
       .descriptionDesktop {
         display: none;
       }
     }
 
-    img {
-      width: 72px;
-      margin: 7px 24px 0 0;
+    .product__btns {
+      .live__btn {
+        background-color: $base-color;
+        color: white;
+        border: none;
+      }
     }
   }
 

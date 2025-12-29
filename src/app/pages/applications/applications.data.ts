@@ -6,6 +6,8 @@ export interface SectionItem {
   productLogoFilename: string;
   productLogoAltText: string;
   productPreviewsPath: string;
+  productAppLive: string;
+  productAppDetails: string;
 }
 
 export const PRODUCT_PATH = 'applications';
@@ -21,6 +23,8 @@ export const SECTION_BASIC_APPS: SectionItem[] = [
     productLogoFilename: 'logo-card-grid-01.webp',
     productLogoAltText: 'Card Grit App',
     productPreviewsPath: 'card-grid',
+    productAppLive: 'https://apps.powerapps.com/play/e/default-549b19de-dbf1-433e-bb1b-6e4b3d74efe3/a/edd79195-100d-4501-b85e-6bdf57ab5b09?tenantId=549b19de-dbf1-433e-bb1b-6e4b3d74efe3&hint=6d70e200-aed8-4f23-9d87-a38c706a081b&sourcetime=1766930963785&source=portal',
+    productAppDetails: 'https://make.powerapps.com/environments/Default-549b19de-dbf1-433e-bb1b-6e4b3d74efe3/apps/edd79195-100d-4501-b85e-6bdf57ab5b09/details',
   },
 ];
 
@@ -35,5 +39,7 @@ export const SECTION_COMPLEX_APPS: SectionItem[] = [
     productLogoFilename: 'logo-talent-management-00.webp',
     productLogoAltText: 'Talent Management App',
     productPreviewsPath: 'talent-management',
+    productAppLive: '',
+    productAppDetails: '',
   },
 ];
