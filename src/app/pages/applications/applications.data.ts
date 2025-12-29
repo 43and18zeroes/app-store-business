@@ -18,7 +18,7 @@ export const SECTION_BASIC_APPS: SectionItem[] = [
       'Our innovative Card Grid application offers a streamlined interface designed for the effortless management and visualization of business resources. By presenting data in a clean, structured layout, users can quickly gain a high-level overview of essential assets at a single glance.',
     productDescription2:
       'The app features integrated search and advanced filtering capabilities to ensure that the right information is always just a few clicks away. These powerful navigation tools eliminate data clutter, significantly boosting productivity and decision-making speed across your organization.',
-    productLogoFilename: 'logo-card-grid-00.webp',
+    productLogoFilename: 'logo-card-grid-01.webp',
     productLogoAltText: 'Card Grit App',
     productPreviewsPath: 'card-grid',
   },
