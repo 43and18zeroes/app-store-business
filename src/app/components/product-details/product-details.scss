@@ -50,7 +50,11 @@ header {
 
   .details__btn {
     font-size: 15px;
-    color:  light-dark(#059669, #10b981);
+    color: light-dark(#059669, #10b981);
+
+    &:hover {
+      background-color: red;
+    }
   }
 }
 
