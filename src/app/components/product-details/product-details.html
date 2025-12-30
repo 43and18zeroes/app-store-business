@@ -16,8 +16,25 @@
 <p class="descriptionMobile">{{ item()!.productDescription }}</p>
 
 <div class="product__btns">
-  <a matButton="filled" class="live__btn" [href]="item()!.productAppLive" target="_blank">Live</a>
-  <a matButton class="details__btn" [href]="item()!.productAppDetails" target="_blank">Details</a>
+  <a
+    mat-flat-button
+    class="live__btn"
+    [href]="item()!.productAppLive || null"
+    [disabled]="!item()!.productAppLive"
+    target="_blank"
+  >
+    Live{{ !item()!.productAppLive ? " (Coming soon)" : "" }}
+  </a>
+
+  <a
+    mat-stroked-button
+    class="details__btn"
+    [href]="item()!.productAppDetails || null"
+    [disabled]="!item()!.productAppDetails"
+    target="_blank"
+  >
+    Details{{ !item()!.productAppDetails ? " (Coming soon)" : "" }}
+  </a>
 </div>
 
 <app-preview-swiper
