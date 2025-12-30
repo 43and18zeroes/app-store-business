@@ -16,8 +16,8 @@
 <p class="descriptionMobile">{{ item()!.productDescription }}</p>
 
 <div class="product__btns">
-  <button matButton="filled" class="live__btn">Live</button>
-  <button matButton class="details__btn">Details</button>
+  <a matButton="filled" class="live__btn" [href]="item()!.productAppLive" target="_blank">Live</a>
+  <a matButton class="details__btn" [href]="item()!.productAppDetails" target="_blank">Details</a>
 </div>
 
 <app-preview-swiper
