@@ -52,8 +52,8 @@ header {
     font-size: 15px;
     color: light-dark(#059669, #10b981);
 
-    &:hover {
-      background-color: red;
+    ::ng-deep .mat-mdc-button-persistent-ripple::before {
+      transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) !important;
     }
   }
 }
