@@ -29,7 +29,7 @@ header {
 .product__btns {
   display: flex;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 
   a {
     border-radius: 8px;
@@ -101,9 +101,15 @@ header {
 
 @media (width < 600px) {
   header {
+    margin-bottom: 32px;
+    
     img {
       margin-right: 16px;
     }
+  }
+
+  .descriptionMobile {
+    margin-bottom: 32px;
   }
 
   .product__btns {
